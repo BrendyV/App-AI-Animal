@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimalAI.Maui.Views.InfoPage"
+             Title="Info">
+    <VerticalStackLayout>
+        <Border
+            Margin="25"
+            Stroke="Black"
+            StrokeThickness="2"
+            Padding="3,3">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="5,5,5,5"/>
+            </Border.StrokeShape>
+            <Label 
+            Text="Address"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" 
+            Background="Black"
+            TextColor="White"
+                FontSize="Large"/>
+        </Border>
+
+        <Label
+            Text="123 Imaginary Street"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="Medium"/>
+        <Label
+            Text="Dreamland, Fantasyland 99999"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="Medium"/>
+
+        <Border
+            Margin="25"
+            Stroke="Black"
+            StrokeThickness="2"
+            Padding="3,3">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="5,5,5,5"/>
+            </Border.StrokeShape>
+            <Label 
+            Text="Phonenumber"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" 
+            Background="Black"
+            TextColor="White"
+                FontSize="Large"/>
+        </Border>
+
+        <Label
+            Text="+321 985 236 145"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="Medium"/>
+
+        <Border
+            Margin="25"
+            Stroke="Black"
+            StrokeThickness="2"
+            Padding="3,3">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="5,5,5,5"/>
+            </Border.StrokeShape>
+            <Label 
+            Text="E-mail"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" 
+            Background="Black"
+            TextColor="White"
+                FontSize="Large"/>
+        </Border>
+        <Label
+            Text="info@dreamanimal.com"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="Medium"/>
+
+    </VerticalStackLayout>
+</ContentPage>

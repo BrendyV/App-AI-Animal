@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:AnimalAI.Maui.Views"
+             xmlns:viewmodels="clr-namespace:AnimalAI.Maui.ViewModels"
+             x:Class="AnimalAI.Maui.Views.LookingPage"
+             Title="Welk dier zie ik???">
+    <views:BasePage.BindingContext>
+        <viewmodels:LookingViewModel/>
+    </views:BasePage.BindingContext>
+
+    <VerticalStackLayout>
+        <Label 
+            Text="Hier moet je dan de mogelijkheid krijgen met de AI om te scannen en de info van het dier te zien"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button Text="Take Picture" Command="{Binding CapturePhotoCommand}" Margin="10" />
+
+        <Image Source="{Binding PhotoPath}" IsVisible="{Binding ShowPhoto}" HeightRequest="300" Margin="10"/>
+        
+        <Button Text="Show Picture!" Command="{Binding PickPhotoCommand}" Margin="10"/>
+        
+        <Label Text="{Binding OutputLabel}"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="Fill"/>
+        
+
+    </VerticalStackLayout>
+</views:BasePage>

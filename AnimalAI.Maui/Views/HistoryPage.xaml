@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimalAI.Maui.Views.HistoryPage"
+             Title="History of a animal parc">
+    <VerticalStackLayout>
+
+        <Border
+            Margin="25"
+            Stroke="Black"
+            StrokeThickness="2"
+            Padding="3,3">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="5,5,5,5"/>
+            </Border.StrokeShape>
+            <Label 
+            Text="The concept of a zoo, or a place where animals are displayed and kept for public entertainment, dates back to ancient civilizations. 
+                The first recorded zoological garden was established in ancient Egypt around 3500 BCE, where exotic animals were kept for the amusement of 
+                the pharaoh and his guests.
+                The Romans also kept exotic animals in their gardens and circuses, and the first modern zoo, the London Zoo, was founded in 1828. Since 
+                then, zoos have been a popular attraction in many cities around the world.
+                However, the role of zoos has evolved over time. In the past, zoos were primarily focused on displaying animals for entertainment 
+                purposes and often kept animals in cramped and unnatural conditions. Today, many zoos have a strong focus on conservation and education, 
+                and work to provide a more natural habitat for the animals in their care.
+                Some zoos also engage in research and play a critical role in protecting endangered species and working to preserve biodiversity. 
+                Despite these efforts, zoos remain a controversial topic, with some critics arguing that they are inhumane and do not adequately replicate 
+                the animals' natural habitats."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Background="Black"
+            TextColor="White"/>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>
